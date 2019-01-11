@@ -8,13 +8,19 @@
 [![LGTM Code Quality: Cpp](https://img.shields.io/lgtm/grade/cpp/g/ivmai/bdwgc.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ivmai/bdwgc/context:cpp)
 [![LGTM Total Alerts](https://img.shields.io/lgtm/alerts/g/ivmai/bdwgc.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ivmai/bdwgc/alerts)
 
-This is version 8.1.0 (next release development) of a conservative garbage
+This is an **UNOFFICIAL, PATCHED** version of Boehm-Demers-Weiser
+Garbage Collector 8.1.0 (next release development), a conservative garbage
 collector for C and C++.
 
+This **UNOFFICIAL, PATCHED** package is needed to support the C++ library
+[crysp](https://github.com/cosmos72/crysp].
+
+Please do **NOT** send issues related to this patched version to the maintainers of
+the [original Boehm-Demers-Weiser Garbage Collector](https://github.com/ivmai/bdwgc).
 
 ## Download
 
-You might find a more recent/stable version on the
+The original, unpatched version is available from the
 [Download](https://github.com/ivmai/bdwgc/wiki/Download) page, or
 [BDWGC site](http://www.hboehm.info/gc/).
 

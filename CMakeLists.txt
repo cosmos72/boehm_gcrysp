@@ -237,16 +237,16 @@ IF(enable_checksums)
     SET(SRC ${SRC} checksums.c)
 ENDIF(enable_checksums)
 
-ADD_LIBRARY(          gc-lib   STATIC      ${SRC})
-SET_TARGET_PROPERTIES(gc-lib   PROPERTIES
+ADD_LIBRARY(          gcrysp-lib   STATIC      ${SRC})
+SET_TARGET_PROPERTIES(gcrysp-lib   PROPERTIES
                       COMPILE_DEFINITIONS GC_NOT_DLL)
 #TODO TARGET_LINK_LIBRARIES(...  ...  ${LIBS})
 
-ADD_LIBRARY(          gcmt-lib STATIC      ${SRC})
-SET_TARGET_PROPERTIES(gcmt-lib PROPERTIES
+ADD_LIBRARY(          gcryspmt-lib STATIC      ${SRC})
+SET_TARGET_PROPERTIES(gcryspmt-lib PROPERTIES
                       COMPILE_DEFINITIONS GC_NOT_DLL)
 
-ADD_LIBRARY(          gcmt-dll  SHARED     ${SRC})
+ADD_LIBRARY(          gcryspmt-dll  SHARED     ${SRC})
 
 IF(WIN32)
   ADD_EXECUTABLE(cord cord/cordbscs.c cord/cordxtra.c
@@ -254,7 +254,7 @@ IF(WIN32)
   SET_TARGET_PROPERTIES(cord PROPERTIES WIN32_EXECUTABLE TRUE)
   SET_TARGET_PROPERTIES(cord    PROPERTIES
                       COMPILE_DEFINITIONS GC_NOT_DLL)
-  TARGET_LINK_LIBRARIES(cord gc-lib)
+  TARGET_LINK_LIBRARIES(cord gcrysp-lib)
   TARGET_LINK_LIBRARIES(cord gdi32)
 ENDIF(WIN32)
 
