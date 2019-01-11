@@ -13,7 +13,7 @@ Garbage Collector 8.1.0 (next release development), a conservative garbage
 collector for C and C++.
 
 This **UNOFFICIAL, PATCHED** package is needed to support the C++ library
-[crysp](https://github.com/cosmos72/crysp].
+[crysp](https://github.com/cosmos72/crysp).
 
 Please do **NOT** send issues related to this patched version to the maintainers of
 the [original Boehm-Demers-Weiser Garbage Collector](https://github.com/ivmai/bdwgc).
@@ -27,6 +27,9 @@ The original, unpatched version is available from the
 Also, the latest bug fixes and new features are available in the
 [development repository](https://github.com/ivmai/bdwgc).
 
+The latest version of this **UNOFFICIAL, PATCHED** library
+is available from its GitHub repository
+[github.com/cosmos72/boehm_gcrysp](https://github.com/cosmos72/boehm_gcrysp).
 
 ## Overview
 
